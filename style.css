@@ -61,6 +61,10 @@ a {
     background: linear-gradient(#263545, #3B536B);
     padding: 0 20px;
     color: #fff;
+    -webkit-box-shadow: 0px 2px 5px #1c1a19;
+            box-shadow: 0px 2px 5px #1c1a19;
+    z-index: 1;
+    position: relative;
 
 }
 
