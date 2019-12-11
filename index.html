@@ -13,54 +13,25 @@
 </head>
 
 <body>
-    <header>
-        <!--________________Titreprincipal________________-->
 
-        <div class="bloc_title">
-            <div class="title-principal"><a href="index.html">
-                    <h1 style="padding: 1.4rem 0;">Nicolas Douaron</h1>
-                </a></div>
-        </div>
+    <div class="header">
+        <h2 class="logo">Nicolas Douaron</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
 
-        <!--_____Menu de navigation_____-->
-
-        <nav class="menu">
-            <div class="menu_responsive">
-                <i style="margin-right: .2rem;" class="fa fa-bars"></i>
-            </div>
-
-            <ul class="menu_principal">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Portfolio<i class="fa fa-sort-desc"></i></a>
-                    <ul class="menu--principal_deroulant">
-                        <li class="sous-menu"><a href="Portfolio/Projet1 - DWJ/Projet1.html" target="_blank">WebAgency- Projet
-                                Openclassrooms</a></li>
-                    </ul>
-                </li>
-                <li><a href="cv_git.html">Curriculum Vitae</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <script type="text/javascript">
-            $("nav div").click(function () {
-                $("ul").slideToggle();
-                $("ul ul").css("display", "none");
-            });
-
-            $("ul li").click(function () {
-                $("ul ul").slideUp();
-                $(this).find('ul').slideToggle();
-            });
-
-            $(window).resize(function () {
-                if ($(window).width() > 768) {
-                    $("ul").removeAttr('style');
-                }
-            });
-        </script>
-    </header>
+        <ul class="menu">
+            <a href="#">Accueil</a>
+            <a href="#">Présentation</a>
+            <a href="#">Portfolio<i class="fa fa-sort-desc"></i></a>
+            <a href="#">Curriculum Vitae</a>
+            <a href="#">Contact</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
 
     <!--Header présentation comprenant : identité + une courte phrase et 
 une image / lien pdf cv / lien réseaux sociaux-->
@@ -211,7 +182,8 @@ Nom école + Courte description / Bloc Img avec titre de la section-->
                 <div class="bloc-info-formation__work">
                     <span class="bloc-info__title">Openclassrooms, A distance</span>
                     <span class="bloc-info__text">Projet 1 validé: Réaliser une maquette en HTML5 et
-                        CSS3.</span>
+                        CSS3. Voir le projet : <a class="link_webagency" href="Portfolio/Projet1 - DWJ/Projet1.html"
+                            target="_blank">WebAgency</a></span>
                 </div>
             </div>
             <div class="bloc-info__descri">
