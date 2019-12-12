@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Curriculum Vitae</title>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="accueil.html"><h2 class="logo">Nicolas Douaron</h2></a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="accueil.html">Accueil</a>
+            <a href="#">Présentation</a>
+            <a href="accueil.html">Portfolio<i class="fa fa-sort-desc"></i></a>
+            <a href="#">Curriculum Vitae</a>
+            <a href="#" style="border-right: none;">Contact</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <!--Header présentation comprenant : identité + une courte phrase et 
+une image / lien pdf cv / lien réseaux sociaux-->
+
+    <section id="bloc-header">
+        <div class="header-container">
+            <div class="banniere-image">
+                <img src="images/img_banniere.jpg" alt="Image bannière">
+            </div>
+            <div class="bloc-profil">
+                <img class="img-cv" src="images/miniature_cv.jpg" alt="Ma photo de mon CV">
+                <h1>Nicolas Douaron</h1>
+                <p>Projet : Devenir Développeur Web</p>
+                <p class="bloc-profil_btn"><a href="fichier_CV/CV.pdf" target="_blank">Mon CV en pdf</a></p>
+                <div class="reseau">
+                    <a href="https://www.linkedin.com/in/nicolas-douaron-20605b197/" target="_blank">
+                        <i class="linkedin fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/photographienico/?hl=fr" target="_blank">
+                        <i class="instagram fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="banniere-overlay"></div>
+        </div>
+    </section>
+
+    <!--Section Expérience Professionnelle comprenant : date + nom métier /
+Nom entreprise + Courte description tâches réalisées / Bloc Img avec titre de la section-->
+
+    <div class="bloc-info">
+        <div class="bloc-info__img">
+            <img src="images/img_experience.jpg" alt="">
+            <div class="bloc--image_title">
+                <h2>Mon Expérience Professionnelle</h2>
+            </div>
+            <div class="bloc--image_overlay"></div>
+        </div>
+        <div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Manutentionnaire</strong></span>
+                    <span>Décembre 2018 à Juillet 2019</span>
+                </div>
+                <div class="bloc-info__work">
+                    <span class="bloc-info__title">Districenter</span>
+                    <span class="bloc-info__text">Rigueur, travail en équipe, autonome.</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Agent d'accueil en déchetterie / Ripeur</strong></span>
+                    <span>Juin 2018 à Juillet 2018</span>
+                </div>
+                <div class="bloc-info__work">
+                    <span class="bloc-info__title">Communauté d'Agglomération
+                        Mont Saint Michel Normandie</span>
+                    <span class="bloc-info__text">Gestion d'une déchetterie en autonomie.<br>
+                        Assistance auprès des usagers.</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Agent d'accueil en déchetterie / Ripeur</strong></span>
+                    <span>Mai 2017 à Septembre 2017</span>
+                </div>
+                <div class="bloc-info__work">
+                    <span class="bloc-info__title">Arc Sud Bretagne</span>
+                    <span class="bloc-info__text">Gestion d'une déchetterie en autonomie.<br>
+                        Assistance auprès des usagers.</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Ripeur</strong></span>
+                    <span>Août 2016</span>
+                </div>
+                <div class="bloc-info__work">
+                    <span class="bloc-info__title">Lorient Agglomération</span>
+                    <span class="bloc-info__text">Secteur collecte des déchets.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Section competence et outils comprenant : nom competence + logo /
+Bloc Img avec titre de la section-->
+
+    <div class="bloc-info_competence">
+        <div class="bloc-info-competence__img">
+            <img src="images/img_competence.jpg" alt="">
+            <div class="bloc--image_title">
+                <h2>Mes compétences Web et Outils</h2>
+            </div>
+            <div class="bloc--image-competence_overlay"></div>
+        </div>
+        <div>
+            <div class="bloc-competence">
+                <div class="bloc-competence__front">
+                    <span><strong>HTML5</strong></span>
+                    <span><i style="color: #e34f26;" class="fab fa-html5 fa-2x"></i></span>
+                </div>
+                <div class="bloc-competence__outil">
+                    <span><strong>AdobeXD</strong></span>
+                    <span><img style="width: 32px; height: 33px;" src="images/adobexd.png" alt="Logo Adobe XD"></span>
+                </div>
+            </div>
+            <div class="bloc-competence">
+                <div class="bloc-competence__front">
+                    <span><strong>CSS3</strong></span>
+                    <span><i style="color: #264de4;" class="fab fa-css3-alt fa-2x"></i></span>
+                </div>
+                <div class="bloc-competence__outil">
+                    <span><strong>Wordpress</strong></span>
+                    <span><i style="color: #464646;" class="fab fa-wordpress fa-2x"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Section diplômes et formations comprenant : date + nom formation /
+Nom école + Courte description / Bloc Img avec titre de la section-->
+
+    <div class="bloc-info">
+        <div class="bloc-info__img">
+            <img src="images/img_formation.jpg" alt="">
+            <div class="bloc--image_title">
+                <h2>Diplômes et Formations</h2>
+            </div>
+            <div class="bloc--image_overlay"></div>
+        </div>
+        <div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Bachelor Informatique</strong></span>
+                    <span>Septembre 2019 à Septembre 2022</span>
+                </div>
+                <div class="bloc-info-formation__work">
+                    <span class="bloc-info__title">Campus Academy, Nantes, Loire-Atlantique</span>
+                    <span class="bloc-info__text">Actuellement en première année bachelor informatique</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Développeur Web Junior</strong></span>
+                    <span>Janvier 2018 à Mars 2018</span>
+                </div>
+                <div class="bloc-info-formation__work">
+                    <span class="bloc-info__title">Openclassrooms, A distance</span>
+                    <span class="bloc-info__text">Projet 1 validé: Réaliser une maquette en HTML5 et
+                        CSS3. Voir le projet : <a class="link_webagency" href="Portfolio/Projet1 - DWJ/Projet1.html"
+                            target="_blank">WebAgency</a></span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>BTS Gestion et Protection de la Nature</strong></span>
+                    <span>Septembre 2016 à Avril 2017</span>
+                </div>
+                <div class="bloc-info-formation__work">
+                    <span class="bloc-info__title">Lycée Henri Queuille, Neuvic, Corrèze</span>
+                    <span class="bloc-info__text">Première année de BTS.</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>Bac Professionnel Gestion des Milieux Naturels et de la Faune</strong></span>
+                    <span>Septembre 2014 à Juin 2016</span>
+                </div>
+                <div class="bloc-info-formation__work">
+                    <span class="bloc-info__title">Lycée Kerlebost, Saint-Thuriau, Morbihan</span>
+                    <span class="bloc-info__text">Diplôme obtenu <strong>mention bien</strong>.</span>
+                </div>
+            </div>
+            <div class="bloc-info__descri">
+                <div class="bloc-info__date">
+                    <span><strong>BEP Froid et Conditionnement d'Air</strong></span>
+                    <span>Septembre 2012 à Juin 2014</span>
+                </div>
+                <div class="bloc-info-formation__work">
+                    <span class="bloc-info__title">Lycée Saint Joseph La Salle, Lorient, Morbihan</span>
+                    <span class="bloc-info__text">Diplôme obtenu.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer :  Lien vers menntions légales-->
+
+    <footer>
+        <p>- Réalisé par <span><a href="#">Nicolas DOUARON</a></span> -</p>
+    </footer>
+</body>
+
+</html>
