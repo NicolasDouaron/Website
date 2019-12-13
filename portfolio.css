@@ -354,20 +354,33 @@ footer a:hover {
 }
 
 @media screen and (max-width: 425px) {
+    .parrallax-container {
+        height: 100%;
+    }
+    .textbox_portfolio {
+        max-height: 80%;
+        margin-top: 25%;
+        margin-bottom: 7.5%;
+        padding: 10px;
+    }
     .textbox_portfolio h4 {
         margin: inherit;
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-top: 0;
     }
 
     .textbox_portfolio h1 {
         font-size: 16px;
+        margin-top: 20px;
     }
 
     .textbox_portfolio .underline {
         height: 3px;
         width: 12rem;
+        margin-bottom: 10px;
     }
+
 
     .bloc_description {
         -webkit-box-orient: vertical;
@@ -378,15 +391,17 @@ footer a:hover {
 
     .textbox_portfolio p {
         width: 100%;
+        font-size: 10px;
     }
 
     .bloc_description .bloc_image {
         margin-right: inherit;
-        width: 90%;
+        width: 75%;
         margin-bottom: 20px;
     }
 
     .view {
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 20px;
     }
 }
