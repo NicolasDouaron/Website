@@ -213,7 +213,7 @@ a .nav_last {
 }
 
 .projet>ul>li {
-    padding: 20px 0 0 15px;
+    padding: 20px 0 0 10px;
     margin: 0 10px 15px 0;
     list-style-type: none;
     float: left;
@@ -400,9 +400,11 @@ footer a:hover {
     .logo {
         font-size: 18px;
     }
-    .portfolio h1,
-    .textbox_hover h4{
+    .portfolio h1{
         font-size: 18px;
+    }
+    .textbox_hover h4{
+        font-size: 22px;
     }
     .portfolio span {
         height: 3px;
