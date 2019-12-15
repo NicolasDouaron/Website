@@ -169,6 +169,7 @@ a .nav_last {
     width: 50%;
     background: white;
     padding: 20px;
+    text-align: center;
 }
 
 .banniere-image {
@@ -188,7 +189,7 @@ a .nav_last {
 
 .portfolio {
     margin-top: 5rem;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -257,7 +258,7 @@ a .nav_last {
 
 .textbox h4 {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 60px;
     margin: 0 20px;
     text-transform: uppercase;
@@ -399,13 +400,33 @@ footer a:hover {
     .logo {
         font-size: 18px;
     }
-
+    .portfolio h1,
+    .textbox_hover h4{
+        font-size: 18px;
+    }
+    .portfolio span {
+        height: 3px;
+        width: 9rem;
+        background: #00b0e6;
+    }
+    .textbox {
+        top: 260px;
+        height: 40px;
+    }
+    .textbox h4 {
+        font-size: 16px;
+        line-height: 40px;
+    }
     .menu {
         width: 100%;
     }
-
-    .projet>ul>li {
-        padding: 20px 0 0 0;
-        margin: 0;
+    .imagebox:hover .textbox_hover {
+        height: 100%;
+    }
+    .textbox_hover p {
+        font-size: 14px;
+    }
+    .view {
+        font-size: 14px;
     }
 }
