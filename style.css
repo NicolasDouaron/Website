@@ -220,7 +220,14 @@ a .nav_last {
     align-items: center;
     margin-bottom: 40px;
 }
-
+.bloc_description a {
+    text-decoration: underline;
+}
+.bloc_description a:hover {
+    padding: 2px;
+    background: #33A8CC;
+    text-decoration: none;
+}
 .bloc_image {
     width: 9.2vw;
 }

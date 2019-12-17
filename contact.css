@@ -236,6 +236,13 @@ footer a:hover {
 }
 
 /*______________________Media Queries_________________________*/
+@media screen and (max-width: 1500px) {
+    .parrallax-container #contact {
+        width: 50%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
 @media screen and (max-width: 1050px) {
     .parrallax-container #contact {
         width: 60%;
