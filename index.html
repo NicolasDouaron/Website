@@ -8,7 +8,7 @@
     <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
-    <title>Accueil</title>
+    <title>Nicolas Douaron</title>
     <meta name="description" content="Ma description personnalisée">
     <!--a faire-->
 </head>
@@ -28,9 +28,9 @@
 
         <ul class="menu">
             <a href="index.html">Accueil</a>
-            <a href="index.html">Portfolio<i class="fa fa-sort-desc"></i></a>
+            <a href="#lien_portfolio">Portfolio<i class="fa fa-sort-desc"></i></a>
             <a href="cv.html">Curriculum Vitae</a>
-            <a href="#" style="border-right: none;">Contact</a>
+            <a href="contact.html" style="border-right: none;">Contact</a>
             <label for="chk" class="hide-menu-btn">
                 <i class="fas fa-times"></i>
             </label>
@@ -42,15 +42,28 @@
     <section id="bloc-parrallax">
         <div class="parrallax-container">
             <div class="banniere-image">
-                <img src="images/img_banniere_accueil.jpg" alt="Image bannière">
+                <img src="images/img_banniere_accueil.jpg" alt="Image fond portfolio">
             </div>
-            <p>En cours de création !</p>
+            <div class="textbox_portfolio">
+                <div class="bloc_image">
+                    <img src="images/miniature_cv.jpg" alt="Image WEBAGENCY">
+                </div>
+                <h1>Nicolas Douaron</h1>
+                <span class="underline"></span>
+                <div class="bloc_description">
+                    <p>Etudiant Développeur Web et Mobile <br> Campus Academy</p>
+                </div>
+                <div class="bloc_description">
+                    <p>Actuellement à la recherche d'un stage du Mardi 13 Mai au Vendredi 28 Août 2020, qui peut se
+                        poursuivre par un contrat en alternance en Septembre 2020.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!--Section portfolio comprenant : liste des projets réalisés-->
 
-    <div class="portfolio">
+    <div id="lien_portfolio" class="portfolio">
         <h1>Portfolio</h1>
         <span></span>
     </div>

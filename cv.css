@@ -255,8 +255,7 @@ a {
 .bloc-info_competence {
     max-width: 1000px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 3px 3px #1c1a19;
-    box-shadow: 0px 3px 3px #1c1a19;
+    box-shadow: 0px 1px 3px #1c1a19;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

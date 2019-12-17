@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="contact.css">
+    <title>Nicolas Douaron</title>
+    <meta name="description" content="Ma description personnalisée">
+    <!--a faire-->
+</head>
+
+<body>
+
+    <!--Menu de navigation responsive-->
+
+    <div class="header">
+        <a href="index.html">
+            <h2 class="logo">Nicolas Douaron</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="index.html">Portfolio<i class="fa fa-sort-desc"></i></a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="contact.html" style="border-right: none;">Contact</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <!--Header présentation comprenant : bannière image-->
+
+    <section id="bloc-parrallax">
+        <div class="parrallax-container">
+            <div class="banniere-image">
+                <img src="images/img_contact.jpg" alt="Image bannière">
+            </div>
+            <div id="contact" class="py-5">
+                <div class="container">
+                    <h5 style="font-family: 'sansationbold'; font-size: 24px;" class="text-uppercase text-center m-5">Contact</h5>
+            
+                    <div class="row">
+                        <div class="col-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Nom Prénom</label>
+                                    <input type="text" class="form-control" style="font-size: 12px;" maxlength="25" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" style="font-size: 12px;" maxlength="250" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Sujet</label>
+                                    <input type="text" class="form-control" style="font-size: 12px;" maxlength="25" id="exampleInputEmail1" placeholder="Sujet">
+                                </div>
+                                <div class="form-group">
+                                    <label for="textArea">Message</label>
+                                    <textarea name="message" id="textArea" class="form-control" cols="30" rows="10" style="font-size: 12px;" maxlength="250"></textarea>
+                                </div>
+            
+                                <button type="submit" style="font-size: 16px;" class="btn btn-info">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer-->
+
+    <footer>
+        <p>- Réalisé par <span><a href="index.html">Nicolas DOUARON</a></span> -</p>
+    </footer>
+
+</body>
+
+</html>
