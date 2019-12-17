@@ -58,7 +58,7 @@ a {
 .header {
     height: 60px;
     background: #263545;
-    background: linear-gradient(rgba(38,53,69,.9), rgba(59,83,107,.8));
+    background: linear-gradient(rgb(38, 53, 69), rgba(59, 83, 107));
     padding: 0 20px;
     color: #fff;
     -webkit-box-shadow: 0px 2px 5px #1c1a19;
@@ -87,11 +87,16 @@ a {
     float: right;
     line-height: 60px;
 }
+
 .menu li {
     list-style-type: none;
     display: inline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
+
 .menu a {
     color: #fff;
     text-transform: uppercase;
@@ -242,11 +247,13 @@ footer a:hover {
         margin-bottom: 5%;
     }
 }
+
 @media screen and (max-width: 1050px) {
     .parrallax-container #contact {
         width: 60%;
     }
 }
+
 @media screen and (max-width: 1000px) {
 
     .show-menu-btn,
@@ -288,6 +295,7 @@ footer a:hover {
         right: 0;
     }
 }
+
 @media screen and (max-width: 800px) {
     .parrallax-container #contact {
         width: 70%;
@@ -303,6 +311,7 @@ footer a:hover {
     .menu {
         width: 100%;
     }
+
     .parrallax-container #contact {
         width: 90%;
         margin-top: 20%;
