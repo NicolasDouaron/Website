@@ -88,7 +88,11 @@ a {
     float: right;
     line-height: 60px;
 }
-
+.menu li {
+    list-style-type: none;
+    display: inline;
+    flex-direction: column;
+}
 .menu a {
     color: #fff;
     text-transform: uppercase;
@@ -166,7 +170,7 @@ a .nav_last {
     display: -ms-flexbox;
     display: flex;
     z-index: 1;
-    width: 30%;
+    width: 40%;
     background: #3B536B;
     border-radius: 5%;
     padding: 20px;
@@ -232,7 +236,11 @@ footer a:hover {
 }
 
 /*______________________Media Queries_________________________*/
-
+@media screen and (max-width: 1050px) {
+    .parrallax-container #contact {
+        width: 60%;
+    }
+}
 @media screen and (max-width: 1000px) {
 
     .show-menu-btn,
@@ -274,13 +282,6 @@ footer a:hover {
         right: 0;
     }
 }
-
-@media screen and (max-width: 1050px) {
-    .parrallax-container #contact {
-        width: 50%;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .parrallax-container #contact {
         width: 70%;
@@ -288,7 +289,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
-    
+
     .logo {
         font-size: 18px;
     }
@@ -301,9 +302,11 @@ footer a:hover {
         margin-top: 20%;
         padding: 0px;
     }
+
     .m-5 {
-        margin: 1px!important;
+        margin: 1px !important;
     }
+
     .parrallax-container {
         height: 115vh;
     }
