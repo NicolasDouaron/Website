@@ -301,12 +301,10 @@ footer a:hover {
         margin-top: 20%;
         padding: 0px;
     }
+    .m-5 {
+        margin: 1px!important;
+    }
     .parrallax-container {
         height: 115vh;
-    }
-}
-@media screen and (max-width: 325px) {
-    .m-5 {
-        margin: 0px!important;
     }
 }
