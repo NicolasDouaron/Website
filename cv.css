@@ -417,7 +417,7 @@ a {
 
 .bloc-competence__front,
 .bloc-competence__outil {
-    margin: 3rem;
+    margin: 2rem 3rem;
     width: 30%;
     text-align: center;
 }
