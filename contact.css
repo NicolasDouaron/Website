@@ -307,22 +307,22 @@ footer a:hover {
     .logo {
         font-size: 18px;
     }
-
     .menu {
         width: 100%;
     }
-
     .parrallax-container #contact {
         width: 90%;
         margin-top: 20%;
         padding: 0px;
     }
-
-    .m-5 {
-        margin: 1px !important;
-    }
-
     .parrallax-container {
         height: 115vh;
     }
+}
+
+@media screen and (max-width: 325px) {
+  .parrallax-container #contact {
+    width: 100%;
+    border-radius: 0;
+  }
 }
