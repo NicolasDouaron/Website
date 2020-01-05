@@ -320,7 +320,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 360px) {
   .parrallax-container #contact {
     width: 100%;
     border-radius: 0;
