@@ -1,0 +1,141 @@
+/*_______________
+  
+  Menu de navigation
+  
+  ______________*/
+  .logo {
+  font-size: 24px;
+  line-height: 60px;
+  float: left;
+  margin: 0 20px;
+  text-transform: uppercase;
+  }
+  
+  .menu {
+  font-size: 16px;
+  float: right;
+  line-height: 60px;
+  }
+  .menu li {
+  list-style-type: none;
+  display: inline;
+  flex-direction: column;
+  }
+  .menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  }
+  
+  a .nav_last {
+  border-right: none;
+  }
+  
+  .show-menu-btn,
+  .hide-menu-btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  }
+  
+  .show-menu-btn {
+  float: right;
+  }
+  
+  .show-menu-btn i {
+  line-height: 60px;
+  }
+  
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover {
+  color: #00b0e6;
+  }
+  
+  #chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -11111;
+  }
+
+#navbar {
+  height: 60px;
+  background: #263545;
+  background: linear-gradient(#263545, #3B536B);
+  position: fixed;
+  top: 0;
+  padding: 0 20px;
+  width: 100%;
+  box-shadow: 0px 2px 5px #1c1a19;
+  display: block;
+  z-index: 1;
+  transition: top 0.3s;
+}
+
+label i {
+  color: white;
+}
+
+
+  /*______________________
+
+Media Queries
+
+_________________________*/
+
+@media screen and (max-width: 1000px) {
+
+  .show-menu-btn,
+  .hide-menu-btn {
+      display: block;
+  }
+
+  .menu {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      background: #203345;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.7s;
+      z-index: 1;
+  }
+
+  .menu a {
+      display: block;
+      padding: 20px;
+  }
+
+  .menu a:hover {
+      background: #3B536B;
+  }
+
+  .hide-menu-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+  }
+
+  #chk:checked~.menu {
+      right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 18px;
+    margin: 0 0px;
+  }
+}

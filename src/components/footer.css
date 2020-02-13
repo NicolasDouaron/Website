@@ -1,0 +1,73 @@
+/*______________________Footer_________________________*/
+
+footer {
+  color: white;
+  padding: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #3B536B;
+  width: 100%;
+  height: 80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .hoverName:hover {
+  padding: 5px;
+  background: #33A8CC;
+}
+
+.reseau {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+  text-align: center;
+  border-radius: 10%;
+  width: 10%;
+  margin-top: .5rem;
+}
+
+.bloc-profil .linkedin {
+  width: 35px;
+  margin-right: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #0e76a8;
+  color: white;
+}
+
+.bloc-profil .instagram {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 1rem;
+  }
+
+  .bloc-profil .instagram {
+    width: 25px;
+    height: 25px;
+    line-height: 27.5px;
+  }
+
+  .bloc-profil .linkedin {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,214 @@
+
+/*_______________
+
+Section portfolio: liste des projets réalisés
+
+______________*/
+.container-portfolio {
+  position: relative;
+  /*height: 88vh;*/
+  z-index: 0;
+  }
+
+.title-portfolio {
+  margin-top: 5rem;
+  font-size: 40px;
+  text-align: center;
+}
+.title-portfolio span {
+  display: inline-block;
+  height: 4px;
+  width: 21rem;
+  margin-bottom: 1.5rem;
+  background: #00b0e6;
+}
+
+.projet ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projet>ul>li {
+  list-style-type: none;
+  float: left;
+  margin-top: 4rem;
+}
+
+.projet>ul>li img {
+  width: 350px;
+  height: 340px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),
+      0 2px 2px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),
+      0 2px 2px rgba(0, 0, 0, 0.23);
+}
+
+.imagebox {
+  position: relative;
+  overflow: hidden;
+  max-width: 450px;
+  height: 300px;
+  -webkit-box-shadow: 0px 3px 3px #1c1a19;
+  box-shadow: 0px 3px 3px #1c1a19;
+}
+
+.imagebox img {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.textbox {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, .4)
+}
+
+.textbox h4 {
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  margin: 0 20px;
+  text-transform: uppercase;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.textbox_hover {
+  display: none;
+}
+
+.textbox_hover h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.textbox_hover p {
+  font-size: 16px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.more a>i {
+  font-size: 300px;
+  font-weight: 600;
+  opacity: .3;
+}
+.more:hover a>i {
+  cursor: pointer;
+  opacity: .5;
+}
+
+
+.textbox_hover p {
+  padding-left: 10px;
+}
+
+.btn-more {
+  font-size: 16px;
+  background: #399bb9;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#399bb9), to(#094966));
+  background: linear-gradient(#399bb9, #094966);
+}
+.imagebox:hover .textbox_hover {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+.imagebox .more {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+
+.text_center {
+  margin-top: 3.5rem;
+}
+
+.imagebox:hover .textbox {
+  display: none;
+}
+
+/*____Parallax Separation____*/
+
+.parallax-separ {
+  background-image: url("images/img_banniere_accueil.jpg");
+  height: 20vh;
+  margin-top: 5rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 56%, 0 100%, 0 44%);
+  }
+  .overlay-separ {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: #263545;
+    opacity: .5;
+    }
+
+/*______________________
+
+Media Queries
+
+_________________________*/
+
+@media screen and (max-width: 768px) {
+  .title-portfolio,
+  .title-cv {
+    font-size: 30px;
+  }
+  .title-portfolio span {
+    height: 3px;
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+  .title-cv span {
+    height: 3px;
+    width: 18rem;
+  }
+}
+  
+@media screen and (max-width: 500px) {
+  .projet>ul>li img {
+    width: 309px;
+    height: 309px;
+  }
+  .text_center {
+    margin-top: 2.7rem;
+}
+.parallax-separ{
+  height: 10vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}

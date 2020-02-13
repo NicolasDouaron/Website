@@ -1,0 +1,61 @@
+/*_______________
+
+Instructions all page
+
+______________*/
+
+html {
+  font-family: "Fantasy";
+  font-size: 10px;
+  }
+  
+  *,
+  *:before,
+  *::after {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  img {
+  width: 100%;
+  }
+  
+  body {
+  overflow-x: hidden;
+  background-color: #DCDCDC;
+  }
+  
+  a {
+  color: white;
+  text-decoration: none;
+  }
+
+  /* ----------------------------
+	NotFound
+---------------------------- */
+
+.notFound {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	background: #eceff1;
+}
+.notFound h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+button {
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: #2196F3;
+	margin-top: 10px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+}

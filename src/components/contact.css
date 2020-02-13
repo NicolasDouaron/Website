@@ -1,0 +1,93 @@
+/*______________________
+
+Contact
+
+_________________________*/
+.content-contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: rgba(38, 53, 69,0.8);
+}
+.contact-form h1 {
+  color: white;
+  font-size: 30px;
+}
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg{
+  width: 100%;
+}
+  
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+}
+  
+.msg textarea{
+  height: 115px;
+}
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 14px;
+    border: none;
+}
+.contact-form form {
+  width: 75%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+textarea[type="text"]:focus {
+	outline:none;
+}
+@media screen and (max-width: 1000px){
+  .btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  .contact-form {
+    width: 90%;
+}
+.contact-form form {
+  width: 100%;
+}
+}
+/*____Parallax Contact____*/
+
+.parallax-contact {
+  background-image: url("images/img_contact.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
