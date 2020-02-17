@@ -6,14 +6,19 @@ Section portfolio: liste des projets réalisés
 ______________*/
 .container-portfolio {
   position: relative;
-  /*height: 88vh;*/
   z-index: 0;
   }
-
+.pagePortfolio {
+  position: relative;
+  height: calc(100vh - 180px);
+}
 .title-portfolio {
   margin-top: 5rem;
   font-size: 40px;
   text-align: center;
+}
+.title-pagePortfolio {
+  margin-top: 10rem;
 }
 .title-portfolio span {
   display: inline-block;
@@ -25,11 +30,10 @@ ______________*/
 
 .projet ul {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .projet>ul>li {
@@ -43,8 +47,6 @@ ______________*/
   height: 340px;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),
-      0 2px 2px rgba(0, 0, 0, 0.23);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),
       0 2px 2px rgba(0, 0, 0, 0.23);
 }
@@ -54,7 +56,6 @@ ______________*/
   overflow: hidden;
   max-width: 450px;
   height: 300px;
-  -webkit-box-shadow: 0px 3px 3px #1c1a19;
   box-shadow: 0px 3px 3px #1c1a19;
 }
 
@@ -156,7 +157,9 @@ ______________*/
 .imagebox:hover .textbox {
   display: none;
 }
-
+.sous-titre {
+  font-size: 24px;
+}
 /*____Parallax Separation____*/
 
 .parallax-separ {
@@ -167,7 +170,8 @@ ______________*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(100% 0, 100% 56%, 0 100%, 0 44%);
+  -webkit-clip-path: polygon(100% 0, 100% 56%, 0 100%, 0 44%);
+          clip-path: polygon(100% 0, 100% 56%, 0 100%, 0 44%);
   }
   .overlay-separ {
     position: absolute;
@@ -209,6 +213,11 @@ _________________________*/
 }
 .parallax-separ{
   height: 10vh;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+.pagePortfolio {
+  position: relative;
+  height: 100vh;
+}
 }

@@ -14,16 +14,17 @@ class NotFound extends Component {
 
   renderRedirect = () => {
     if (this.state.redirect) {
-      return <Redirect to='/home' />
+      return <Redirect to='/' />
     }
   }
 
   render () {
     return (
       <div className="notFound">
+        <h1 className="">Error 404</h1>
         <h2>Ne t'avise pas de taper n'importe quoi dans mon url !</h2>
         {this.renderRedirect()}
-        <button onClick={this.setRedirect}>Back to Website</button>
+        <button onClick={this.setRedirect}>Retour Site Web</button>
       </div>
     )
   }

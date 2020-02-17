@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import NotFound from './components/NotFound'
 import Projet from './components/projet'
+import PagePortfolio from './components/PagePortfolio'
 import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
@@ -11,13 +12,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 const Root = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path='/home' component={App}/> 
+      <Route exact path='/' component={App}/>
+      <Route path='/home' component={App}/> 
       <Route path='/#home' component={App}/>
-      <Route path='/home#portfolio'/>
+      <Route path='/#portfolio'/>
       <Route path='/projet' component={Projet}/>
-      <Route path='/home#cv'/>
-      <Route path='/home#contact'/>
-      <Route component={NotFound}/>
+      <Route path='/portfolio' component={PagePortfolio}/>
+      <Route path='/#cv'/>
+      <Route path='/#contact'/>
+      <Route path='*' component={NotFound}/>
     </Switch>
   </BrowserRouter>
 )

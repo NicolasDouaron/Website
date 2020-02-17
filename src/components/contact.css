@@ -5,13 +5,20 @@ Contact
 _________________________*/
 .content-contact {
   height: 100vh;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 .contact-form {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   width: 50%;
   padding: 30px;
   border-radius: 5px;
@@ -23,8 +30,11 @@ _________________________*/
   font-size: 30px;
 }
 .input-fields{
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   margin-right: 4%;
 }
 .input-fields,

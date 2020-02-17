@@ -3,13 +3,10 @@
 .parallax-container {
   position: relative;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
@@ -34,15 +31,12 @@
 
 .textbox_portfolio {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
   z-index: 1;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 40%;
   background: white;
@@ -76,10 +70,8 @@
 
 .bloc_description {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
 }
@@ -95,8 +87,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .view {
@@ -156,6 +147,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 10px;
+    display: -webkit-box;
     display: flex;
 }
   .textbox_portfolio h4 {
@@ -180,7 +172,6 @@
   .bloc_description {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
               flex-direction: column-reverse;
   }
 

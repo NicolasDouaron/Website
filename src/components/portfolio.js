@@ -9,6 +9,8 @@ import ImageBackground from './images/img_portfolio.jpg';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import { Redirect } from 'react-router-dom'
+
 const portfolio = {
   projet1: {
     titre: 'WebAgency',
@@ -22,7 +24,20 @@ const portfolio = {
 
 class Portfolio extends Component {
     state = {
-      portfolio
+      portfolio,
+      redirect: false
+    }
+
+    setRedirect = () => {
+      this.setState({
+        redirect: true
+      })
+    }
+  
+    renderRedirect = () => {
+      if (this.state.redirect) {
+        return <Redirect to='/portfolio' />
+      }
     }
     render() {
       const { portfolio } = this.state
@@ -52,7 +67,8 @@ class Portfolio extends Component {
                     <div className="imagebox">
                       <img src={ImageMore} alt="Background"></img>
                       <div className="more">
-                          <a><i className="fas fa-plus"></i></a>
+                          {this.renderRedirect()}
+                          <a onClick={this.setRedirect}><i className="fas fa-plus"></i></a>
                       </div>
                     </div>
                   </li>

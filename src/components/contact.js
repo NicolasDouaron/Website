@@ -14,7 +14,7 @@ class Contact extends Component {
           <div className="content-contact">
             <div className="contact-form">
               <h1>Contact</h1>
-              <form name="verifForm" action="http://127.0.0.1:8000/action.php" method="post">
+              <form name="verifForm" action="/action.php" method="post">
                 <div className="input-fields">
                   <input type="text" className="input" name="nom" placeholder="Prénom" 
                   minLength="3" maxLength="25" size="25" required/>

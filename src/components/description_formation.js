@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-const AddFormation = ({nom, date, lieux, description}) => {
+const AddFormation = ({nom, date, lieux, description, lien}) => {
   return (
     <Fragment>
       <div className="bloc-info__descri">
@@ -10,7 +10,7 @@ const AddFormation = ({nom, date, lieux, description}) => {
         </div>
         <div className="bloc-info__work">
           <span className="bloc-info__title">{lieux}</span>
-          <span className="bloc-info__text">{description}</span>
+  <span className="bloc-info__text">{description}{lien}</span>
         </div>
       </div>
     </Fragment>

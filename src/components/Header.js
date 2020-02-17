@@ -17,10 +17,15 @@ const Header = () => {
     prevScrollpos = currentScrollPos;
   };
 
+  function toggle() {
+    document.getElementById("chk").checked = false
+    console.log('reff');
+  }
+
   return (
     <Fragment>
       <div id="navbar" className="header">
-        <a href="/home">
+        <a href="/">
           <h2 className="logo">Nicolas Douaron</h2>
         </a>
         <input type="checkbox" id="chk" />
@@ -29,10 +34,10 @@ const Header = () => {
         </label>
 
         <ul className="menu">
-          <li><a href="/home">Accueil</a></li>
-          <li><a href="/home#portfolio">Portfolio<i className="fa fa-sort-desc"></i></a></li>
-          <li><a href="/home#cv">Curriculum Vitae</a></li>
-          <li><a href="/home#contact" style={{borderRight: 'none'}}>Contact</a></li>
+          <li><a href="/">Accueil</a></li>
+          <li><a onClick={toggle} href="/#portfolio">Portfolio<i className="fa fa-sort-desc"></i></a></li>
+          <li><a onClick={toggle} href="/#cv">Curriculum Vitae</a></li>
+          <li><a onClick={toggle} href="/#contact" style={{borderRight: 'none'}}>Contact</a></li>
           <label htmlFor="chk" className="hide-menu-btn">
             <i className="fas fa-times"></i>
           </label>

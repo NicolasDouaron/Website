@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-const ViewPortfolio = ({titre, sousTitre, descriptionProjet, image, link}) => {
+const ViewPortfolio = ({titre, sousTitre, descriptionProjet, image}) => {
   return (
     <Fragment>
       <div className="textbox_portfolio">
@@ -14,7 +14,7 @@ const ViewPortfolio = ({titre, sousTitre, descriptionProjet, image, link}) => {
               </div>
           </div>
           <span className="view">
-              <a id="lien_portfolio" href={link} target="_blank">Voir le
+              <a id="lien_portfolio" href="https://nicolasdouaron.github.io/Webagency/" target="_blank">Voir le
                   projet</a>
           </span>
       </div>

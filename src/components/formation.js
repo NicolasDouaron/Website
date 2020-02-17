@@ -4,8 +4,6 @@ import Image from './images/img_formation.jpg';
 
 import AddFormation from './description_formation';
 
-const lien = '<a class="link_webagency" href="Portfolio/Projet1DWJ/Projet1.html" target="_blank">WebAgency</a>;'
-console.log(lien)
 
 const ajoutFormation = {
   formation1: {
@@ -18,7 +16,8 @@ const ajoutFormation = {
     nom: "Développeur Web Junior",
     date: 'Janvier 2018 à Mars 2018',
     lieux: "Openclassrooms, A distance",
-    description: "Projet 1 validé: Réaliser une maquette en HTML5 et CSS3. Voir le projet : " + {lien},
+    description: "Projet 1 validé: Réaliser une maquette en HTML5 et CSS3. Voir le projet : ",
+    lien: <a class="link_webagency" href="https://nicolasdouaron.github.io/Webagency/" target="_blank">WebAgency</a>
   },
   formation3: {
     nom: "BTS Gestion et Protection de la Nature",
@@ -54,7 +53,8 @@ class Formation extends Component {
         nom = {ajoutFormation[formation].nom}
         date = {ajoutFormation[formation].date}
         lieux = {ajoutFormation[formation].lieux}
-        description = {ajoutFormation[formation].description}/>
+        description = {ajoutFormation[formation].description}
+        lien = {ajoutFormation[formation].lien}/>
     ))
 
       return (

@@ -15,7 +15,7 @@ const descriptionProjet = {
     sousTitre: 'Projet Openclassrooms HTML5/CSS3 :',
     descriptionProjet: "Projet Openclassrooms réalisé dans le cadre de la formation 'Développeur Web Junior'. Le premier projet consistait à effectuer une intégration d'une maquette en HTML5/CSS3 (sans framework tel que Bootstrap), responsive, SEO avec une validation HTML et CSS W3C.",
     image: Image,
-    link: "./Portfolio/Projet1DWJ/Projet1.html",
+    link: "",
   }
 }
 

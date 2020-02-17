@@ -3,15 +3,7 @@ if (isset($_POST)) {
 
   $to = "nicolas.doudouu@gmail.com";
 
-// Set content-type header for sending HTML email
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// Additional headers
-    $headers .= 'From: Portfolio <nicolas.doudouu@gmail.com>' . "\r\n";
-//    $headers .= 'Cc: welcome@example.com' . "\r\n";
-//    $headers .= 'Bcc: welcome2@example.com' . "\r\n";
-
+  $from = 'nicolas.doudouu@gmail.com';
 //  Création de la variable $htmlContent dans le template pour le mail
     $message = 
     "<p>Nom : " . $_POST["nom"] . "</p>".
@@ -20,12 +12,38 @@ if (isset($_POST)) {
     "<p>Message : " . $_POST["message"] . "</p>";
 
 // Send email
-    if(mail($to, "Mail de contact", $message, $headers)){
-        echo 'OK';
+    if(send_mail($to, $from, "Mail de contact", $message)){
+        header('location: /');
     }else{
         echo 'Erreur à l\'envoi du message : '.error_get_last()["message"];
     }
     die();
 }else{
     echo "Erreur à l'envoi du message : ";
+}
+
+function send_mail($to,$from,$subject,$msg){
+  
+  $headers ="MIME-Version: 1.0 
+";
+  $headers.="from: $from  $subject  
+";
+  $headers.="Content-type: text/html;charset=utf-8 
+";
+  $headers.="X-Priority: 3
+";
+  $headers.="X-Mailer: smail-PHP ".phpversion()."
+";
+  $msg    ='
+  <div style="text-align:left">
+  <h2>'.$subject.'</h2>
+  '.$msg.'
+  </div>
+  ';
+
+  if( mail($to,$subject,$msg,$headers) ){
+      return true;
+  }else{
+      return false;
+  }
 }
